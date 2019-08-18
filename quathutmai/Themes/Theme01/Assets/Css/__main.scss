@@ -1,0 +1,117 @@
+﻿@import "variables.scss";
+@import "validate.scss";
+
+@import "bootstrap-4.2.1/scss/bootstrap.scss";
+@import "bootstrap-grid-extend.scss";
+@import "bootstrap-edit.scss";
+@import "font-awesome-4.7.0/scss/font-awesome.scss";
+@import "../Js/slick-1.8.1/slick/slick.scss";
+@import "slick.scss";
+
+@import "font-face.scss";
+@import "image.scss";
+
+@import "header";
+@import "product";
+@import "construct";
+@import "info";
+@import "location";
+@import "customer";
+@import "footer";
+@import "copy-right";
+@import "contact";
+@import "news";
+@import "photo-library";
+@import "video-library";
+@import "question";
+@import "project";
+@import "products";
+@import "map-store";
+@import "service";
+@import "about-us";
+@import "index";
+@import "menu-child";
+
+@import "responsive";
+
+
+html,body{overflow-x:hidden}
+body{font-family:$font-family;font-size:$font-size;color:$text-color}
+a:hover{text-decoration:none}
+
+/*#region Khối bài viết mẫu dạng ngang (ảnh 1 bên, nội dung 1 bên) */
+.item-row{display:flex;flex-wrap:wrap;margin-left:-15px;margin-right:-15px;
+          .item-img{width:33.33%;padding-left:15px;padding-right:15px}
+          .item-body{flex-basis:0;flex-grow:1;max-width:100%;padding-left:15px;padding-right:15px}
+
+          &.no-gutters{margin-left:0;margin-right:0;
+                      .item-img,
+                      .item-body{padding-left:0;padding-right:0}
+          }
+}
+/*#endregion */
+
+/*#region Khối các tab */
+.tabs-content .tab-content{display:none}
+.tabs-content .tab-content.active{display:block}
+/*#endregion */
+
+h2.h2-title{font-weight:bold;color:$color-3;font-size:38px;
+            a{color:$color-3;&:hover{color:$color-2}}
+}
+/*fix container*/
+@media (min-width: 1200px){
+    .container{
+        max-width: 1420px;
+    }
+}
+
+/*border-row*/
+.border-row-top{
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+.border-row-bottom{
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.border-col-left{
+     border-left: 1px solid rgba(0,0,0,0.1);
+     height: 100%;
+}
+.border-col-right{
+     border-right: 1px solid rgba(0,0,0,0.1);
+     height: 100%;
+}
+
+/*margin col*/
+.mt-col{
+    margin-top: 10px;
+}
+.mb-col{
+    margin-bottom: 10px;
+}
+
+/*btn-scrollup*/
+.scrollup{
+	position: fixed;
+	right: 50px;
+	bottom: 30px;
+	z-index: 10000;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+}
+.scrollup i{
+	font-size: 28px;
+	color: #000;
+	text-decoration: none;
+	opacity: 0.5;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.scrollup:hover i{
+	opacity: 1;
+}
+.hideScr{
+	display: none;
+}

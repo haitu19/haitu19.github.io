@@ -1,0 +1,211 @@
+﻿
+/*menu-content*/
+.menu-contents{
+    padding-top: 50px;
+    font-family: "SFUI";
+    background: #f4f4f4;
+    .menu-content{
+        width: 100%;
+        background: #fff;
+        height: 40px;
+        line-height: 40px;
+        box-shadow: 2px 5px 8px rgba(0,0,0,0.1);
+        border-radius: 4px;
+        .menu{
+            font-size: 15px;
+            color: #333;
+            padding: 11px 30px;
+            border-radius: 4px;
+            &.active{
+                background: #0c68a7;
+                color: #fff;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+/*about*/
+.about-all, .about-profile, .about-prize, .about-chart, .about-mission{
+    padding: 50px 0;
+    font-family: "SFUI";
+    background: #f4f4f4;
+    .item{
+        .item-title{
+            font-size: 36px;
+            color: #333;
+            padding: 8px 0;
+            position: relative;
+            margin-bottom: 30px;
+            &:before{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                height: 4px;
+                width: 100px;
+                background: #0c68a7;
+            }
+        }
+        .text{
+            font-size: 16px;
+            color: #333;
+            text-align: justify;
+            span{
+                color: #000;
+                font-weight: bold;
+            }
+        }
+        .item-links{
+            margin-top: 30px;
+            .view-more{
+                color: #fff;
+                font-size: 16px;
+                padding: 10px 30px;
+                background: #0c68a7;
+                border-radius: 4px;
+                &:hover{
+                    opacity: 0.7;
+                }
+            }
+        }
+        .item-img{
+            .imgc{
+                &:before{
+                    padding-bottom: 66.62%;
+                }
+            }
+        }
+    }
+}
+.about-profile, .about-chart{
+    background: #fff;
+}
+.fix-bg-col{
+    background: #f4f4f4 !important;
+}
+.fix-row-flex{
+    display: flex;
+    flex-direction: row-reverse;
+    position: relative;
+    &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -100%;
+        bottom: 0;
+        width: 100%;
+        background: #f4f4f4;
+    }
+}
+.fix-col-padding{
+    padding-right: 0;
+}
+.item-fix{
+    padding: 30px 20px;
+}
+
+/*About detail*/
+.about-detail{
+    padding: 50px 0;
+    font-family: "SFUI";
+    color: #333;
+    .list{
+        .list-title{
+            font-size: 36px;
+        }
+        .date-view{
+            display: flex;
+            color: #999;
+            font-size: 14px;
+            .right{
+                flex: 1;
+                text-align: right;
+                span.fa{
+                    padding: 3px 5px;
+                    margin: 0 2px;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    background: #E8E8E8;
+                    &:hover{
+                        background: #F3F3F3;
+                    }
+                }
+                a{
+                    span{
+                        background: #4167ab;
+                        padding: 2px 10px;
+                        border-radius: 4px;
+                        color: #fff;
+                        font-family: 'Roboto';
+                        font-size: $font-size-tru-2;
+                        font-weight: bold;
+                        &:hover{
+                            background: #0082D6;
+                        }
+                    }
+                }
+            }
+        }
+        .list-body{
+            margin-top: 10px;
+            border-top: 1px solid rgba(0,0,0,0.1s);
+            padding: 20px 0;
+            font-size: 16px;
+            text-align: justify;
+            color: #333;
+            .box-img{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+    .social-share{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+        border-top: 1px solid rgba(0,0,0,0.1);
+        padding: 10px 0 8px 0;
+        margin: 20px 0;
+        ul{
+            display: flex;
+            margin: 0;
+            padding: 0;
+            li{
+                list-style: none;
+                &.social{
+                    flex: 1;
+                    text-align: right;
+                    span{
+                        background: #4167ab;
+                        padding: 2px 10px;
+                        border-radius: 4px;
+                        color: #fff;
+                        font-family: 'Roboto';
+                        font-size: $font-size-tru-2;
+                        font-weight: bold;
+                        &:hover{
+                            background: #0082D6;
+                        }
+                    }
+                    img{
+                        margin-bottom: 3px;
+                        margin-left: 5px;
+                    }
+                }
+                &.action{
+                     a{
+                         font-size:$font-size-cong-1;
+                         color: #999;
+                         &:hover{
+                             color: #0B6FAF;
+                         }
+                     }
+                     i.fa{
+                         font-size: $font-size-tru-2;
+                     }
+                }
+            }
+        }
+    }
+}

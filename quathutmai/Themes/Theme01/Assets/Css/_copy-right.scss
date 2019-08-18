@@ -1,0 +1,28 @@
+﻿.copy-right{
+   height: 40px;
+   line-height: 40px;
+    background: #174555;
+    color: #fff;
+    font-family: "SFUI";
+    font-size: 14px;
+    overflow: hidden;
+    .text{
+        margin: 0;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        li{
+            list-style: none;
+            padding: 0 25px;
+            &:nth-child(3){
+                cursor: pointer;
+                &:hover{
+                    transition: 0.3s;
+                    background: #0584c5;
+                }
+            }
+        }    
+    }
+}

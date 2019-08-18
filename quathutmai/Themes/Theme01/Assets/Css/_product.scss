@@ -1,0 +1,97 @@
+﻿.product{
+    padding-bottom: 70px;
+    .list{
+        .list-title{
+            font-family: "SFUI";
+            font-size: 40px;
+            color: #000;
+            background: #fff;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+        .list-text{
+            font-size: 15px;
+            color: #000;
+            position: relative;
+            &:after{
+                content: '';
+                position: absolute;
+                top: -16px;
+                width: 100%;
+                left: 0;
+                height: 2px;
+                background: rgba(0,0,0,0.1);
+            }
+        }
+        .list-body{
+            margin-top: 40px;
+            .slick-slider{
+                .item{
+                    padding: 0 5px;
+                    border-right: 1px solid rgba(0,0,0,0.05);
+                    border-left: 1px solid rgba(0,0,0,0.05);
+                    outline: none;
+                    overflow: hidden;
+                    .item-img{
+                        height: 250px;
+                        overflow: hidden;
+                        &:hover{
+                            img{
+                                transition: 0.3s;
+                                transform: scale(1.1);
+                            }
+                        }
+                        .imgc0{
+                            &:before{
+                            }
+                            img{
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+                    .item-body{
+                        font-family: "SFUI";
+                        padding: 10px;
+                        .item-title{
+                            color: #000;
+                            font-size: $font-size-cong-3;
+                            &:hover{
+                                color: #0c68a7;
+                            }
+                        }
+                        .item-text{
+                            font-size: $font-size-cong-1;
+                            color: $color-fade;
+                            margin-top: 10px;
+                            p{
+                                margin-bottom: 5px;
+                            }
+                            .price{
+                                span{
+                                    font-weight: bold;
+                                    color: #000;
+                                }
+                            }
+                        }
+                    }
+                }
+                .slick-dots{
+                    bottom: -30px;
+                    button{
+                        border-radius: 0;
+                        border: 1px solid rgba(0,0,0,0.4);
+                        background: $color-white;
+                        width: 10px;
+                        height: 13px;
+                    }
+                    .slick-active{
+                        button{
+                            background: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

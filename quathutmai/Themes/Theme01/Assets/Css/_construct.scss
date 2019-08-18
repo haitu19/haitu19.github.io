@@ -1,0 +1,92 @@
+﻿.construct{
+    padding: 60px 0;
+    background: #eeeeee;
+    .list{
+        .list-title{
+            font-size: 40px;
+            font-family: "SFUI";
+            color: #000;
+        }
+        .list-text{
+            font-size: 16px;
+            color: #000;
+            font-family: "SFUI";
+            text-align: justify;
+        }
+        .list-body{
+            .item{
+                position: relative;
+                &:hover{
+                    img{
+                        transition: 0.3s;
+                        transform: scale(1.15);
+                    }
+                }
+                .item-img{
+                    .imgc{
+                        &:before{
+                            padding-bottom: 52.56%;
+                        }
+                        img{
+                            transition: 0.3s;
+                        }
+                    }
+                }
+                .item-body{
+                    position: absolute;
+                    bottom: 0;
+                    z-index: 1;
+                    font-family: "SFUI";
+                    padding: 10px 20px;
+                    .item-title{
+                        color: #fff;
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    .item-text{
+                        margin: 0;
+                        margin-top: 5px;
+                        color: #d2d2d2;
+                    }
+                }
+            }
+        }
+    }
+    .item{
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            img{
+                transition: 0.3s;
+                transform: scale(1.15);
+            }
+        }
+        .item-img{
+            .imgc{
+                &:before{
+                    padding-bottom: 67.22%;
+                }
+                img{
+                    transition: 0.3s;
+                }
+            }
+        }
+        .item-body{
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            font-family: "SFUI";
+            padding: 10px 20px;
+            .item-title{
+                color: #fff;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .item-text{
+                margin: 0;
+                margin-top: 5px;
+                color: #d2d2d2;
+            }
+        }
+    }
+}
